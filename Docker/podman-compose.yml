@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672" # AMQP port
+      - "15672:15672" # Management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+
+  myapi:
+    build:
+      context: ..
+      dockerfile: ./Docker/Dockerfile.api # separate Dockerfile for API
+    container_name: myapi
+    image: myapi:latest
+    depends_on:
+      - rabbitmq
+    ports:
+      - "8080:8080"
+    environment:
+      RABBITMQ__HOST: rabbitmq
+      RABBITMQ__PORT: 5672
+
+  reader:
+    build:
+      context: ..
+      dockerfile: ./Docker/Dockerfile.reader # separate Dockerfile for Reader
+    container_name: reader
+    image: reader:latest
+    depends_on:
+      - rabbitmq
+    environment:
+      RABBITMQ__HOST: rabbitmq
+      RABBITMQ__PORT: 5672

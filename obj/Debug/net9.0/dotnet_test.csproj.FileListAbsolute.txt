@@ -1,0 +1,14 @@
+/Users/bartosz.szabon/repos/dotnet_test/bin/Debug/net9.0/dotnet_test
+/Users/bartosz.szabon/repos/dotnet_test/bin/Debug/net9.0/dotnet_test.deps.json
+/Users/bartosz.szabon/repos/dotnet_test/bin/Debug/net9.0/dotnet_test.runtimeconfig.json
+/Users/bartosz.szabon/repos/dotnet_test/bin/Debug/net9.0/dotnet_test.dll
+/Users/bartosz.szabon/repos/dotnet_test/bin/Debug/net9.0/dotnet_test.pdb
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.AssemblyInfoInputs.cache
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.AssemblyInfo.cs
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.csproj.CoreCompileInputs.cache
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.dll
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/refint/dotnet_test.dll
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.pdb
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/dotnet_test.genruntimeconfig.cache
+/Users/bartosz.szabon/repos/dotnet_test/obj/Debug/net9.0/ref/dotnet_test.dll
