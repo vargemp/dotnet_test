@@ -9,6 +9,8 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        builder.Services.AddProblemDetails();
+        builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 
         // Add services to the container.
 
@@ -25,6 +27,7 @@ public class Program
         {
             app.MapOpenApi();
         }
+        app.UseExceptionHandler();
 
         app.UseHttpsRedirection();
 
